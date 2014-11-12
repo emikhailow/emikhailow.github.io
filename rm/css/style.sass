@@ -1,0 +1,506 @@
+@import "bourbon" 
+$font1: 'Trebuchet MS'
+html,body
+	height: 100%
+	margin: 0
+	fupadding: 0 
+@mixin flex-all
+	display: flex
+	display: -webkit-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: box
+	
+@mixin ui-reset
+	input[type = "submit"], select[size], option
+		border: none
+		outline: none
+		&:active
+			outline: none
+	input:focus, select:focus 
+		outline: none
+@mixin links
+	&:link,&:active,&:visited
+		color: white
+@mixin ul-reset
+	ul
+		-webkit-margin-before: 0
+		-webkit-margin-after: 0
+		-webkit-margin-start: 0
+		-webkit-margin-end: 0
+		-webkit-padding-start: 0
+		margin-before: 0
+		margin-after: 0
+		margin-start: 0
+		margin-end: 0
+		padding-start: 0
+		
+@mixin anchorFont
+	text-decoration: underline
+	
+	
+	text-transform: uppercase
+.floatContainer
+	overflow: hidden
+.slider
+	position: relative
+	z-index: 1
+	li
+		height: 285px
+		overflow: hidden
+		width: 1014px
+		background: #fff
+.title
+	font-family: $font1
+	font-size: 24px
+	text-transform: uppercase
+	padding: 20px 0
+.subtitle
+	font: 13px Tahoma
+	color: #545c63
+.contactsText
+	font: 18px Tahoma
+	color: #2a2a2a
+	@include flex-all
+	justify-content: space-between
+	margin-top: 55px
+	margin-bottom: 68px
+	span
+		font-size: 21px
+		span
+			color: #499354
+	.cPhone, .cMail, .cAdress
+		float: left
+	.cAdress
+		position: relative
+		text-align: left
+		&:before
+			content: "Адрес:"
+			position: absolute
+			top: 0px
+			left: -60px
+
+.nav2
+	height: 118px
+	width: 100%
+	background: url(../img/shadow.png)
+	position: relative
+	top: -40px
+	z-index: 0
+.slogan
+	font-family: 'arno_proregular'
+	font-size: 24px
+	margin: 10px  0 0 15px
+	float: left
+	.subslogan
+		font-family: Tahoma
+		font-size: 13px
+		color: #787676
+.phone
+	font: 21px Tahoma
+	float: right
+	margin-top: 32px	
+	span
+		color: #757575
+.mail
+	font: 12px Tahoma
+	text-transform: uppercase
+	margin-bottom: 10px
+	color: #1274a2
+	text-decoration: underline	
+
+.ask
+	float: right
+	margin-top: 22px
+	margin-left: 93px
+
+
+	.askButton
+		background: #129d31
+		padding: 5px 10px
+		border-radius: 14px
+		a
+			@include links
+			-webkit-text-decoration-style: dotted !important
+			text-decoration: underline !important
+			 
+			 
+.wrapper
+	width: 1014px
+	margin: 0 auto
+.logo
+	width: 70px
+	height: 85px
+	background: url(../img/logo.png)
+	float: left
+.logoGray
+	width: 43px
+	height: 52px
+	background: url(../img/logoGray.png)
+	float: left
+	margin-top: 24px
+
+body
+	margin: 0
+nav
+	width: 100%
+	margin-top: 10px
+	background: url(../img/nav.png)
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	
+	ul
+		display: inline-block
+		position: relative
+		transform: translateX(-50%)
+		-webkit-transform: translateX(-50%)
+		-webkit-margin-before: 0
+		-webkit-margin-after: 0
+		-webkit-margin-start: 0
+		-webkit-margin-end: 0
+		-webkit-padding-start: 0
+		margin-before: 0
+		margin-after: 0
+		margin-start: 0
+		margin-end: 0
+		padding-start: 0
+		left: 50%
+		li
+			float: left
+			display: inline-block
+			padding: 15px 15px
+			@include anchorFont
+			position: relative
+			a
+				@include links
+				
+				
+				font-family: 'Trebuchet MS'
+				&:hover
+					text-decoration: none !important
+			&:hover,&.active
+				background: #187d28
+				text-decoration: none !important
+				transition: All 0.4s
+				
+.nav2
+	ul
+		display: inline-block
+		position: relative
+		transform: translateX(-50%)
+		-webkit-transform: translateX(-50%)
+		-webkit-margin-before: 0
+		-webkit-margin-after: 0
+		-webkit-margin-start: 0
+		-webkit-margin-end: 0
+		-webkit-padding-start: 0
+		margin-before: 0
+		margin-after: 0
+		margin-start: 0
+		margin-end: 0
+		padding-start: 0
+		left: 50%
+		li
+			margin-top: 60px
+			float: left
+			display: inline-block
+			padding: 5px 15px
+			position: relative
+			a
+				color: #105991
+				font-size: 11px
+				font-family: Tahoma
+				text-decoration: underline
+				
+				
+				&:hover
+					text-decoration: none !important
+			&:hover
+				text-decoration: none !important
+				&:after
+					content: ""
+					position: absolute
+					width: 0
+					height: 0
+					border-style: solid
+					border-width: 0 10px 10px 10px
+					border-color: transparent transparent #109c32 transparent
+					top: -10px
+					left: 50%
+					transform: translateX(-50%)
+					-webkit-transform: translateX(-50%)
+					transition: All 0.4s
+				a
+					color: white !important
+					text-decoration: none !important
+				border-radius: 8px
+				transition: All 0.4s
+				background: #0c9b33 
+				background: -moz-linear-gradient(top,  #0c9b33 1%, #5eaf17 98%)
+				background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#0c9b33), color-stop(98%,#5eaf17))
+				background: -webkit-linear-gradient(top,  #0c9b33 1%,#5eaf17 98%)
+				background: -o-linear-gradient(top,  #0c9b33 1%,#5eaf17 98%)
+				background: -ms-linear-gradient(top,  #0c9b33 1%,#5eaf17 98%)
+				background: linear-gradient(to bottom,  #0c9b33 1%,#5eaf17 98%)
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0c9b33', endColorstr='#5eaf17',GradientType=0 )
+.nav3
+	height: 61px
+	float: left
+
+	ul
+		display: inline-block
+		-webkit-margin-before: 0
+		-webkit-margin-after: 0
+		-webkit-margin-start: 0
+		-webkit-margin-end: 0
+		-webkit-padding-start: 0
+		margin-before: 0
+		margin-after: 0
+		margin-start: 0
+		margin-end: 0
+		padding-start: 0
+		
+		li
+			float: left
+			display: inline-block
+			padding: 20px 45px 20px 0
+			@include anchorFont
+			position: relative
+			a
+				font-size: 13px
+				color: #353535
+				font-family: 'Trebuchet MS'
+				&:hover
+					text-decoration: none !important
+			&:hover
+				text-decoration: none !important
+				
+.paragraph
+	float: left
+	width: 375px
+	margin-right: 50px
+
+	.title
+		font-family: $font1
+		font-size: 24px
+		text-transform: uppercase
+		padding: 20px 0 
+	.text
+		font: 13px Tahoma
+		color: #545c63		
+		text-transform: none
+		line-height: 1.5em			
+.download
+	color: #0090ff
+	text-decoration: underline
+	
+	
+	font-style: italic
+	display: inline-block
+	position: relative
+	&:after
+		content: ""
+		background: url(../img/dl.png)
+		width: 18px
+		height: 18px
+		position: absolute
+		right: -23px
+footer
+	
+	.subFooter1
+		border-top: 1px solid #b8b8b8
+		border-bottom: 1px solid #b8b8b8
+		margin-top: 50px
+		
+		.pay
+			float: right
+			margin-right: 100px
+			margin-top: 15px
+			@include flex-all
+			flex-flow: row wrap
+			justify-content: space-between
+			width: 90px
+			align-items: center
+		.social
+			float: right
+			width: 210px
+			@include flex-all
+			flex-flow: row wrap
+			justify-content: space-around
+			margin: 13px 0
+	.slogan
+		color: #c8c8c8
+		font-size: 15px
+		margin-top: 24px
+		.subslogan
+			color: #c8c8c8
+			font-size: 10px
+	.phone
+		float: left
+		margin-left: 130px
+		margin-top: 24px
+		text-align: right
+		.mail
+			float: right
+			font-size: 11px
+	
+.visa
+	background: url(../img/visa.png)
+	width: 46px
+	height: 23px
+.mastercard
+	background: url(../img/mastercard.png)
+	width: 38px
+	height: 28px
+.vk
+	background: url(../img/vk.png)
+	width: 31px
+	height: 31px
+.fb
+	background: url(../img/fb.png)
+	width: 31px
+	height: 31px
+.masson
+	background: url(../img/masson.png)
+	width: 31px
+	height: 31px
+.twitter
+	background: url(../img/twitter.png)
+	width: 31px
+	height: 31px
+.item
+	float: left
+.clickable
+	cursor: pointer !important
+//slider
+.productImg
+	width: 212px
+	height: 239px
+	float: left
+	position: relative
+	margin-left: 60px
+	margin-right: 78px
+	.price
+		position: absolute
+		background: url(../img/price.png)
+		background-repeat: no-repeat
+		width: 112px
+		height: 37px
+		top: 30px
+		left: -20px
+		font: 24px 'Trebuchet MS' bold
+		padding: 4px 0 8px 15px
+.productDesc
+	float: left
+	.productTitle
+		font: 24px $font1 bold
+		text-transform: uppercase
+		margin-bottom: 18px
+	.productText
+		font: 13px Tahoma
+		margin-bottom: 56px
+	.productFeatures
+		@include ul-reset
+		ul
+			-ms-column-count: 2
+			-o-column-count: 2
+			-moz-column-count: 2
+			-khtml-column-count: 2
+			column-count: 2
+			-webkit-column-count: 2
+			list-style-position: inside
+			li
+				width: auto
+				height: auto
+				position: relative
+				list-style-image: url(../img/greenDot.png)
+				font: 12px Tahoma
+				margin-bottom: 10px
+.fullSrc
+	min-height: 100%
+	margin-bottom: -191px
+.buffer
+	height: 191px
+#dropDown
+	padding-bottom: 15px
+	li
+		padding: 15px 25px
+		&:after
+			display: none
+		ul
+			position: absolute
+			top: 50px
+			left: 50%
+			transform: translateX(-50%)
+			display: none
+			background: #187d28
+			z-index: 9999
+			width: 100%
+			margin: 0
+			
+			li
+				text-align: left
+				font-size: 11px
+				text-transform: none
+				padding: 5px 15px
+				float: none
+				display: list-item
+				list-style-type: none
+				&:after
+					display: none
+				&:hover
+					background: #0c4b16
+					transition: All 0.4s
+		&:hover
+			ul
+				display: block
+.feedback
+	width: 720px
+	margin: 0 auto
+	h2
+		text-align: center
+	.subtitle
+		width: 460px
+		margin: 40px auto
+		text-align: center
+
+	form
+		@include ui-reset
+		font-family: Tahoma
+
+		input, textarea
+			font-family: Tahoma
+			&::-webkit-input-placeholder
+				font-family: 'Trebuchet MS'
+			&::-moz-placeholder
+				font-family: 'Trebuchet MS'
+			&:-ms-input-placeholder
+				font-family: 'Trebuchet MS'
+			&:-moz-placeholder
+				font-family: 'Trebuchet MS'
+		input[type="text"]
+			border: auto
+			width: 45% 
+		width: 460px
+		margin: 0 auto
+		@include flex-all
+		flex-flow: row wrap
+		justify-content: space-between
+		input[name="email"]
+			width: 100%
+		textarea
+			width: 100%
+		input[type="submit"]
+			width: 120%
+			font-family: 'Trebuchet MS'
+			border-radius: 10px
+			margin: 20px auto
+			background: #d2ff9d /* Old browsers */
+			background: -moz-linear-gradient(top,  #d2ff9d 0%, #b8ff1c 100%) /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d2ff9d), color-stop(100%,#b8ff1c)) /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  #d2ff9d 0%,#b8ff1c 100%) /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  #d2ff9d 0%,#b8ff1c 100%) /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  #d2ff9d 0%,#b8ff1c 100%) /* IE10+ */
+			background: linear-gradient(to bottom,  #d2ff9d 0%,#b8ff1c 100%) /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff9d', endColorstr='#b8ff1c',GradientType=0 ) /* IE6-9 */
+			padding: 15px

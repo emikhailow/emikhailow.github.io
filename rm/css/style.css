@@ -1,0 +1,609 @@
+@charset "UTF-8";
+html, body {
+  height: 100%;
+  margin: 0;
+  fupadding: 0;
+}
+
+.floatContainer {
+  overflow: hidden;
+}
+
+.slider {
+  position: relative;
+  z-index: 1;
+}
+.slider li {
+  height: 285px;
+  overflow: hidden;
+  width: 1014px;
+  background: white;
+}
+
+.title {
+  font-family: "Trebuchet MS";
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+.subtitle {
+  font: 13px Tahoma;
+  color: #545c63;
+}
+
+.contactsText {
+  font: 18px Tahoma;
+  color: #2a2a2a;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: box;
+  justify-content: space-between;
+  margin-top: 55px;
+  margin-bottom: 68px;
+}
+.contactsText span {
+  font-size: 21px;
+}
+.contactsText span span {
+  color: #499354;
+}
+.contactsText .cPhone, .contactsText .cMail, .contactsText .cAdress {
+  float: left;
+}
+.contactsText .cAdress {
+  position: relative;
+  text-align: left;
+}
+.contactsText .cAdress:before {
+  content: "Адрес:";
+  position: absolute;
+  top: 0px;
+  left: -60px;
+}
+
+.nav2 {
+  height: 118px;
+  width: 100%;
+  background: url(../img/shadow.png);
+  position: relative;
+  top: -40px;
+  z-index: 0;
+}
+
+.slogan {
+  font-family: "arno_proregular";
+  font-size: 24px;
+  margin: 10px 0 0 15px;
+  float: left;
+}
+.slogan .subslogan {
+  font-family: Tahoma;
+  font-size: 13px;
+  color: #787676;
+}
+
+.phone {
+  font: 21px Tahoma;
+  float: right;
+  margin-top: 32px;
+}
+.phone span {
+  color: #757575;
+}
+
+.mail {
+  font: 12px Tahoma;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #1274a2;
+  text-decoration: underline;
+}
+
+.ask {
+  float: right;
+  margin-top: 22px;
+  margin-left: 93px;
+}
+.ask .askButton {
+  background: #129d31;
+  padding: 5px 10px;
+  border-radius: 14px;
+}
+.ask .askButton a {
+  -webkit-text-decoration-style: dotted !important;
+  text-decoration: underline !important;
+}
+.ask .askButton a:link, .ask .askButton a:active, .ask .askButton a:visited {
+  color: white;
+}
+
+.wrapper {
+  width: 1014px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 70px;
+  height: 85px;
+  background: url(../img/logo.png);
+  float: left;
+}
+
+.logoGray {
+  width: 43px;
+  height: 52px;
+  background: url(../img/logoGray.png);
+  float: left;
+  margin-top: 24px;
+}
+
+body {
+  margin: 0;
+}
+
+nav {
+  width: 100%;
+  margin-top: 10px;
+  background: url(../img/nav.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+nav ul {
+  display: inline-block;
+  position: relative;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  margin-before: 0;
+  margin-after: 0;
+  margin-start: 0;
+  margin-end: 0;
+  padding-start: 0;
+  left: 50%;
+}
+nav ul li {
+  float: left;
+  display: inline-block;
+  padding: 15px 15px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  position: relative;
+}
+nav ul li a {
+  font-family: "Trebuchet MS";
+}
+nav ul li a:link, nav ul li a:active, nav ul li a:visited {
+  color: white;
+}
+nav ul li a:hover {
+  text-decoration: none !important;
+}
+nav ul li:hover, nav ul li.active {
+  background: #187d28;
+  text-decoration: none !important;
+  transition: All 0.4s;
+}
+
+.nav2 ul {
+  display: inline-block;
+  position: relative;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  margin-before: 0;
+  margin-after: 0;
+  margin-start: 0;
+  margin-end: 0;
+  padding-start: 0;
+  left: 50%;
+}
+.nav2 ul li {
+  margin-top: 60px;
+  float: left;
+  display: inline-block;
+  padding: 5px 15px;
+  position: relative;
+}
+.nav2 ul li a {
+  color: #105991;
+  font-size: 11px;
+  font-family: Tahoma;
+  text-decoration: underline;
+}
+.nav2 ul li a:hover {
+  text-decoration: none !important;
+}
+.nav2 ul li:hover {
+  text-decoration: none !important;
+  border-radius: 8px;
+  transition: All 0.4s;
+  background: #0c9b33;
+  background: -moz-linear-gradient(top, #0c9b33 1%, #5eaf17 98%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #0c9b33), color-stop(98%, #5eaf17));
+  background: -webkit-linear-gradient(top, #0c9b33 1%, #5eaf17 98%);
+  background: -o-linear-gradient(top, #0c9b33 1%, #5eaf17 98%);
+  background: -ms-linear-gradient(top, #0c9b33 1%, #5eaf17 98%);
+  background: linear-gradient(to bottom, #0c9b33 1%, #5eaf17 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0c9b33', endColorstr='#5eaf17',GradientType=0 );
+}
+.nav2 ul li:hover:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #109c32 transparent;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transition: All 0.4s;
+}
+.nav2 ul li:hover a {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.nav3 {
+  height: 61px;
+  float: left;
+}
+.nav3 ul {
+  display: inline-block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  margin-before: 0;
+  margin-after: 0;
+  margin-start: 0;
+  margin-end: 0;
+  padding-start: 0;
+}
+.nav3 ul li {
+  float: left;
+  display: inline-block;
+  padding: 20px 45px 20px 0;
+  text-decoration: underline;
+  text-transform: uppercase;
+  position: relative;
+}
+.nav3 ul li a {
+  font-size: 13px;
+  color: #353535;
+  font-family: "Trebuchet MS";
+}
+.nav3 ul li a:hover {
+  text-decoration: none !important;
+}
+.nav3 ul li:hover {
+  text-decoration: none !important;
+}
+
+.paragraph {
+  float: left;
+  width: 375px;
+  margin-right: 50px;
+}
+.paragraph .title {
+  font-family: "Trebuchet MS";
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+.paragraph .text {
+  font: 13px Tahoma;
+  color: #545c63;
+  text-transform: none;
+  line-height: 1.5em;
+}
+
+.download {
+  color: #0090ff;
+  text-decoration: underline;
+  font-style: italic;
+  display: inline-block;
+  position: relative;
+}
+.download:after {
+  content: "";
+  background: url(../img/dl.png);
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: -23px;
+}
+
+footer .subFooter1 {
+  border-top: 1px solid #b8b8b8;
+  border-bottom: 1px solid #b8b8b8;
+  margin-top: 50px;
+}
+footer .subFooter1 .pay {
+  float: right;
+  margin-right: 100px;
+  margin-top: 15px;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: box;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 90px;
+  align-items: center;
+}
+footer .subFooter1 .social {
+  float: right;
+  width: 210px;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: box;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  margin: 13px 0;
+}
+footer .slogan {
+  color: #c8c8c8;
+  font-size: 15px;
+  margin-top: 24px;
+}
+footer .slogan .subslogan {
+  color: #c8c8c8;
+  font-size: 10px;
+}
+footer .phone {
+  float: left;
+  margin-left: 130px;
+  margin-top: 24px;
+  text-align: right;
+}
+footer .phone .mail {
+  float: right;
+  font-size: 11px;
+}
+
+.visa {
+  background: url(../img/visa.png);
+  width: 46px;
+  height: 23px;
+}
+
+.mastercard {
+  background: url(../img/mastercard.png);
+  width: 38px;
+  height: 28px;
+}
+
+.vk {
+  background: url(../img/vk.png);
+  width: 31px;
+  height: 31px;
+}
+
+.fb {
+  background: url(../img/fb.png);
+  width: 31px;
+  height: 31px;
+}
+
+.masson {
+  background: url(../img/masson.png);
+  width: 31px;
+  height: 31px;
+}
+
+.twitter {
+  background: url(../img/twitter.png);
+  width: 31px;
+  height: 31px;
+}
+
+.item {
+  float: left;
+}
+
+.clickable {
+  cursor: pointer !important;
+}
+
+.productImg {
+  width: 212px;
+  height: 239px;
+  float: left;
+  position: relative;
+  margin-left: 60px;
+  margin-right: 78px;
+}
+.productImg .price {
+  position: absolute;
+  background: url(../img/price.png);
+  background-repeat: no-repeat;
+  width: 112px;
+  height: 37px;
+  top: 30px;
+  left: -20px;
+  font: 24px "Trebuchet MS" bold;
+  padding: 4px 0 8px 15px;
+}
+
+.productDesc {
+  float: left;
+}
+.productDesc .productTitle {
+  font: 24px "Trebuchet MS" bold;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.productDesc .productText {
+  font: 13px Tahoma;
+  margin-bottom: 56px;
+}
+.productDesc .productFeatures ul {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+  margin-before: 0;
+  margin-after: 0;
+  margin-start: 0;
+  margin-end: 0;
+  padding-start: 0;
+}
+.productDesc .productFeatures ul {
+  -ms-column-count: 2;
+  -o-column-count: 2;
+  -moz-column-count: 2;
+  -khtml-column-count: 2;
+  column-count: 2;
+  -webkit-column-count: 2;
+  list-style-position: inside;
+}
+.productDesc .productFeatures ul li {
+  width: auto;
+  height: auto;
+  position: relative;
+  list-style-image: url(../img/greenDot.png);
+  font: 12px Tahoma;
+  margin-bottom: 10px;
+}
+
+.fullSrc {
+  min-height: 100%;
+  margin-bottom: -191px;
+}
+
+.buffer {
+  height: 191px;
+}
+
+#dropDown {
+  padding-bottom: 15px;
+}
+#dropDown li {
+  padding: 15px 25px;
+}
+#dropDown li:after {
+  display: none;
+}
+#dropDown li ul {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  background: #187d28;
+  z-index: 9999;
+  width: 100%;
+  margin: 0;
+}
+#dropDown li ul li {
+  text-align: left;
+  font-size: 11px;
+  text-transform: none;
+  padding: 5px 15px;
+  float: none;
+  display: list-item;
+  list-style-type: none;
+}
+#dropDown li ul li:after {
+  display: none;
+}
+#dropDown li ul li:hover {
+  background: #0c4b16;
+  transition: All 0.4s;
+}
+#dropDown li:hover ul {
+  display: block;
+}
+
+.feedback {
+  width: 720px;
+  margin: 0 auto;
+}
+.feedback h2 {
+  text-align: center;
+}
+.feedback .subtitle {
+  width: 460px;
+  margin: 40px auto;
+  text-align: center;
+}
+.feedback form {
+  font-family: Tahoma;
+  width: 460px;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: box;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.feedback form input[type="submit"], .feedback form select[size], .feedback form option {
+  border: none;
+  outline: none;
+}
+.feedback form input[type="submit"]:active, .feedback form select[size]:active, .feedback form option:active {
+  outline: none;
+}
+.feedback form input:focus, .feedback form select:focus {
+  outline: none;
+}
+.feedback form input, .feedback form textarea {
+  font-family: Tahoma;
+}
+.feedback form input::-webkit-input-placeholder, .feedback form textarea::-webkit-input-placeholder {
+  font-family: "Trebuchet MS";
+}
+.feedback form input::-moz-placeholder, .feedback form textarea::-moz-placeholder {
+  font-family: "Trebuchet MS";
+}
+.feedback form input:-ms-input-placeholder, .feedback form textarea:-ms-input-placeholder {
+  font-family: "Trebuchet MS";
+}
+.feedback form input:-moz-placeholder, .feedback form textarea:-moz-placeholder {
+  font-family: "Trebuchet MS";
+}
+.feedback form input[type="text"] {
+  border: auto;
+  width: 45%;
+}
+.feedback form input[name="email"] {
+  width: 100%;
+}
+.feedback form textarea {
+  width: 100%;
+}
+.feedback form input[type="submit"] {
+  width: 120%;
+  font-family: "Trebuchet MS";
+  border-radius: 10px;
+  margin: 20px auto;
+  background: #d2ff9d;
+  background: -moz-linear-gradient(top, #d2ff9d 0%, #b8ff1c 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d2ff9d), color-stop(100%, #b8ff1c));
+  background: -webkit-linear-gradient(top, #d2ff9d 0%, #b8ff1c 100%);
+  background: -o-linear-gradient(top, #d2ff9d 0%, #b8ff1c 100%);
+  background: -ms-linear-gradient(top, #d2ff9d 0%, #b8ff1c 100%);
+  background: linear-gradient(to bottom, #d2ff9d 0%, #b8ff1c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2ff9d', endColorstr='#b8ff1c',GradientType=0 );
+  padding: 15px;
+}

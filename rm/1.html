@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web-Lion - Львы веб-консалтинга</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<meta charset="utf-8">
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
+	<link href="css/jquery.bxslider.css" rel="stylesheet" />
+</head>
+<body>
+	
+		<button class="btn dropdown-toggle" data-toggle="dropdown">Кнопка <span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href="#">Действие</a></li>
+<li><a href="#">Другое действие</a></li>
+<li><a href="#">Еще и еще</a></li>
+<li class="divider"></li>
+<li><a href="#">Отделенный пункт</a></li>
+</ul>
+		
+	<script>
+		$(document).ready(function(){
+		  $('.bxslider').bxSlider();
+		  $(".clickable").click(function(){
+				window.location=$(this).find("a").attr("href"); 
+				return false;
+		  });
+		});
+	</script>
+
+</body>
+</html>
