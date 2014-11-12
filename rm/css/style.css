@@ -19,12 +19,19 @@ html, body {
   width: 1014px;
   background: white;
 }
-
+.slider .item
+{
+	background: white !important;
+	padding-bottom: 20px !important;
+	width: 100% !important;
+	
+}
 .title {
   font-family: "Trebuchet MS";
   font-size: 24px;
   text-transform: uppercase;
   padding: 20px 0;
+  margin:20px 0;
 }
 
 .subtitle {
@@ -295,7 +302,7 @@ nav ul li:hover, nav ul li.active {
 
 .paragraph {
   float: left;
-  width: 375px;
+  width: 45%;
   margin-right: 50px;
 }
 .paragraph .title {
@@ -309,6 +316,14 @@ nav ul li:hover, nav ul li.active {
   color: #545c63;
   text-transform: none;
   line-height: 1.5em;
+}
+h5
+{
+	line-height: 1.5em !important;
+	font: 13px Tahoma !important;
+	color: #545c63 !important;
+	text-transform: none !important;
+	line-height: 1.5em !important;	
 }
 
 .download {
@@ -569,6 +584,7 @@ footer .phone .mail {
 }
 .feedback form input, .feedback form textarea {
   font-family: Tahoma;
+  
 }
 .feedback form input::-webkit-input-placeholder, .feedback form textarea::-webkit-input-placeholder {
   font-family: "Trebuchet MS";
@@ -584,7 +600,7 @@ footer .phone .mail {
 }
 .feedback form input[type="text"] {
   border: auto;
-  width: 45%;
+  width: 48% !important;
 }
 .feedback form input[name="email"] {
   width: 100%;
@@ -593,7 +609,7 @@ footer .phone .mail {
   width: 100%;
 }
 .feedback form input[type="submit"] {
-  width: 120%;
+  width: 100%;
   font-family: "Trebuchet MS";
   border-radius: 10px;
   margin: 20px auto;
@@ -606,4 +622,19 @@ footer .phone .mail {
   background: linear-gradient(to bottom, #d2ff9d 0%, #b8ff1c 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d2ff9d', endColorstr='#b8ff1c',GradientType=0 );
   padding: 15px;
+  border-radius: 5px !important;
+}
+
+.carousel-control
+{
+	background: none !important;
+}
+.glyphicon
+{
+	color: black;
+}
+input
+{
+	margin-bottom: 10px !important;
+	
 }

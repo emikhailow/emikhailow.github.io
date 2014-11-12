@@ -4,30 +4,15 @@
 	<title>Web-Lion - Львы веб-консалтинга</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 	<meta charset="utf-8">
-	
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	
-<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
-
-
-<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
-
-
-<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-
-<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
 	<script src="js/jquery.flexslider.js"></script>
-	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	
-	<link href="css/jquery.bxslider.css" rel="stylesheet" />
 </head>
 <body>
 	<div class="fullSrc">
@@ -68,7 +53,7 @@
 					<li><a href="№">Увеличение конверсии</a></li>
 					<li><a href="#">Портфолио</a></li>
 					<li><a href="contacts.html">Контакты</a></li>
-				</ul>	
+				</ul>
 				<div class="clearfix"></div>
 				<ul id="dropDown">
 					<li><a href="#">Landing Page</a>
@@ -97,13 +82,14 @@
 				</ul>
 			</nav>
 		</header>
-		<div class="title" style="margin-top: 30px">
-			Консалтинговые услуги для интернет-проектов
+		<div class="title">
+			<h3>Консалтинговые услуги для интернет-проектов</h3>
 		</div>
-		<div class="slider" style="margin-top: 30px">
-			<ul class="bxslider">
-			  <li>
-			  	<div class="productImg">
+		<div id="carousel-example-generic" class="carousel slide slider" data-ride="carousel">
+		  
+		  <div class="carousel-inner" role="listbox">
+			<div class="item active">
+			  <div class="productImg">
 			  		<img src="img/product.png" alt="">
 			  		<div class="price">
 			  			10 999
@@ -114,15 +100,15 @@
 			  			Продукт 1
 			  		</div>
 			  		<div class="productText">
-			  			Современное интернет-маркетинговое агентство.
+			  			<h5>Современное интернет-маркетинговое агентство.
 			  			<br> 
 						Мы – та компания, которая продвигает ваш бизнес, ваши товары и услуги в
 						<br>
-						интернет-среде всеми необходимыми для успешного выполнения задач методами.
+						интернет-среде всеми необходимыми для успешного выполнения задач методами.</h5>
 
 			  		</div>
 			  		<div class="productFeatures">
-			  			<ul>
+			  			<h5><ul>
 			  				<li>Аудит текущих источников</li>
 			  			
 			  				<li>Настройка гугл аналитикс</li>
@@ -135,14 +121,15 @@
 			  			
 			  				<li>Помощь в составление отчета</li>
 			  			</ul>
+						</h5>
 			  			
 
 
 			  		</div>
 			  	</div>
-			  </li>
-			  <li>
-			  	<div class="productImg">
+			</div>
+			<div class="item">
+			  <div class="productImg">
 			  		<img src="img/product.png" alt="">
 			  		<div class="price">
 			  			10 999
@@ -153,15 +140,15 @@
 			  			Продукт 1
 			  		</div>
 			  		<div class="productText">
-			  			Современное интернет-маркетинговое агентство.
+			  			<h5>Современное интернет-маркетинговое агентство.
 			  			<br> 
 						Мы – та компания, которая продвигает ваш бизнес, ваши товары и услуги в
 						<br>
-						интернет-среде всеми необходимыми для успешного выполнения задач методами.
+						интернет-среде всеми необходимыми для успешного выполнения задач методами.</h5>
 
 			  		</div>
 			  		<div class="productFeatures">
-			  			<ul>
+			  			<h5><ul>
 			  				<li>Аудит текущих источников</li>
 			  			
 			  				<li>Настройка гугл аналитикс</li>
@@ -174,55 +161,29 @@
 			  			
 			  				<li>Помощь в составление отчета</li>
 			  			</ul>
+						</h5>
 			  			
 
 
 			  		</div>
 			  	</div>
-			  </li>
-			  <li>
-			  	<div class="productImg">
-			  		<img src="img/product.png" alt="">
-			  		<div class="price">
-			  			10 999
-			  		</div>
-			  	</div>
-			  	<div class="productDesc">
-			  		<div class="productTitle">
-			  			Продукт 1
-			  		</div>
-			  		<div class="productText">
-			  			Современное интернет-маркетинговое агентство.
-			  			<br> 
-						Мы – та компания, которая продвигает ваш бизнес, ваши товары и услуги в
-						<br>
-						интернет-среде всеми необходимыми для успешного выполнения задач методами.
+			</div>
+			
+		  </div>
 
-			  		</div>
-			  		<div class="productFeatures">
-			  			<ul>
-			  				<li>Аудит текущих источников</li>
-			  			
-			  				<li>Настройка гугл аналитикс</li>
-			  			
-			  				<li>Настройка метрики</li>
-			  			
-			  				<li>Анализ воронки продаж</li>
-			  			
-			  				<li>Настройка кросс продаж</li>
-			  			
-			  				<li>Помощь в составление отчета</li>
-			  			</ul>
-			  			
-
-
-			  		</div>
-			  	</div>
-			  </li>
-			  
-			</ul>
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			
+			
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			
+			
+		  </a>
 		</div>
-		<div style="display:none">
+		<div class="hidden">
 		<div id="feedback1" class="feedback">
 		    <h2>Задать вопрос</h2>
 		    <div class="subtitle">	
@@ -231,7 +192,7 @@
 		    </div>
 		    <form id="form1" name="contact" method="post" action="mail.php" novalidate="novalidate">
 		        <input type="text" name="name" id="name" class="txt" tabindex="1" placeholder="Имя">
-		        <input type="email" name="phone" id="phone" class="txt" tabindex="2" placeholder="Телефон">
+		        <input type="text" name="phone" id="phone" class="txt" tabindex="2" placeholder="Телефон">
 		        <input type="email" name="email" id="email" class="txt" tabindex="3" placeholder="e-mail">
 		        <textarea name="message" id="message" class="txtarea" tabindex="4" required="" placeholder="Ваше сообщение"></textarea>
 		        <input type="submit" id="submitbtn" name="submit" tabindex="5" value="Отправить cообщение">
@@ -251,28 +212,28 @@
 		<div class="floatContainer">
 			<div class="paragraph">
 				<div class="title">
-					Кто мы такие? 
+					<h3>Кто мы такие?</h3> 
 				</div>
 				<div class="text">
-					Web-lion - команда профессионалных веб-аналитиков, креаторов, дизайнеров, копирайтеров, маркетологов и программистов. Мы предоставляем консалтинговые услуги для интернет-проектов. 
-					Любой проект требует индивидуального подхода, но за время работы у нас сложилось представление о том, что все успешные бизнесы имеют общие черты. И вся деятельность нашей компании направлена на создание эффективных решений для бизнеса.
+					<h5>Web-lion - команда профессионалных веб-аналитиков, креаторов, дизайнеров, копирайтеров, маркетологов и программистов. Мы предоставляем консалтинговые услуги для интернет-проектов. 
+					Любой проект требует индивидуального подхода, но за время работы у нас сложилось представление о том, что все успешные бизнесы имеют общие черты. И вся деятельность нашей компании направлена на создание эффективных решений для бизнеса.</h5>
 				</div>
 			</div>
-			<div class="paragraph" style="width:52%">
+			<div class="paragraph">
 				<div class="title">
-					Презентация продуктов:
+					<h3>Презентация продуктов:</h3>
 					
 				</div>
 				<div class="text">
-					Новые клиенты - оптимизация текущих бизнес-процессов для привлечения новых клиентов. <div class="download clickable">Скачать</div><br>
+					<h5>Новые клиенты - оптимизация текущих бизнес-процессов для привлечения новых клиентов. <div class="download clickable">Скачать</div><br>
 					Лояльность -  налаживание коммуникации с клиентами и создание программ лояльности для увеличения повторных продаж. <div class="download clickable">Скачать</div><br>
 					Бизнес под ключ - создание бизнес и рекомендации по его развитию. <div class="download clickable">Скачать</div><br>
-					Оценка бизнеса - рассчет реальной стоимости бизнеса для его покупки или продажи. <div class="download clickable">Скачать</div>
+					Оценка бизнеса - рассчет реальной стоимости бизнеса для его покупки или продажи. <div class="download clickable">Скачать</div></h5>
 				</div>
 			</div>
 		</div>
 		<div class="title">
-					Отзывы о нас 
+					<h3>Отзывы о нас</h3> 
 				</div>
 		<div id="carousel" class="flexslider">
   <ul class="slides">
@@ -407,7 +368,10 @@
 	
 	<script>
 		$(document).ready(function(){
-		  $('.bxslider').bxSlider();
+		  
+		  $('.carousel').carousel({
+			  interval: 2000
+			})
 		  $(".clickable").click(function(){
 				window.location=$(this).find("a").attr("href"); 
 				return false;
@@ -444,6 +408,7 @@
 			  }
 			});
 		});
+		
 	</script>
 
 </body>
