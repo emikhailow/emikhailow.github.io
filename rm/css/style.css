@@ -273,6 +273,10 @@ nav ul li:hover, nav ul li.active {
   height: 61px;
   
 }
+.carousel-inner
+{
+	background: white;
+}
 .nav3 ul {
   display: inline-block;
   -webkit-margin-before: 0;
