@@ -1,6 +1,6 @@
 @charset "UTF-8";
 html, body {
-  height: 100%;
+  height: auto;
   margin: 0;
   fupadding: 0;
 }
@@ -83,8 +83,9 @@ html, body {
 .slogan {
   font-family: "arno_proregular";
   font-size: 24px;
-  margin: 10px 0 0 15px;
-  float: left;
+  margin-top: 10px;
+  padding-left: 0px !important;
+ 
 }
 .slogan .subslogan {
   font-family: Tahoma;
@@ -94,7 +95,7 @@ html, body {
 
 .phone {
   font: 21px Tahoma;
-  float: right;
+ 
   margin-top: 32px;
 }
 .phone span {
@@ -104,20 +105,23 @@ html, body {
 .mail {
   font: 12px Tahoma;
   text-transform: uppercase;
-  margin-bottom: 10px;
   color: #1274a2;
   text-decoration: underline;
+  float: right;
 }
 
 .ask {
-  float: right;
+ 
   margin-top: 22px;
-  margin-left: 93px;
+ 
 }
 .ask .askButton {
   background: #129d31;
   padding: 5px 10px;
   border-radius: 14px;
+  text-align: center;
+  width: 115px;
+  float: right;
 }
 .ask .askButton a {
   -webkit-text-decoration-style: dotted !important;
@@ -136,14 +140,16 @@ html, body {
   width: 70px;
   height: 85px;
   background: url(../img/logo.png);
-  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .logoGray {
-  width: 43px;
+  width: 50px !important;
   height: 52px;
   background: url(../img/logoGray.png);
-  float: left;
+  background-size: contain;
+  background-repeat: no-repeat;
   margin-top: 24px;
 }
 
@@ -265,7 +271,7 @@ nav ul li:hover, nav ul li.active {
 
 .nav3 {
   height: 61px;
-  float: left;
+  
 }
 .nav3 ul {
   display: inline-block;
@@ -348,8 +354,6 @@ footer .subFooter1 {
   margin-top: 50px;
 }
 footer .subFooter1 .pay {
-  float: right;
-  margin-right: 100px;
   margin-top: 15px;
   display: flex;
   display: -webkit-box;
@@ -357,21 +361,22 @@ footer .subFooter1 .pay {
   display: -webkit-flex;
   display: box;
   flex-flow: row wrap;
-  justify-content: space-between;
-  width: 90px;
+  justify-content: space-around;
+  width: 125px;
   align-items: center;
 }
 footer .subFooter1 .social {
-  float: right;
-  width: 210px;
+  
   display: flex;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: box;
   flex-flow: row wrap;
-  justify-content: space-around;
-  margin: 13px 0;
+  justify-content: flex-end;
+  
+  margin-top: 13px;
+  width: 309px;
 }
 footer .slogan {
   color: #c8c8c8;
@@ -383,9 +388,8 @@ footer .slogan .subslogan {
   font-size: 10px;
 }
 footer .phone {
-  float: left;
-  margin-left: 130px;
-  margin-top: 24px;
+  
+  margin-top: 18px;
   text-align: right;
 }
 footer .phone .mail {
@@ -429,8 +433,9 @@ footer .phone .mail {
   height: 31px;
 }
 
-.item {
+.social .item {
   float: left;
+  margin-left:20px;
 }
 
 .clickable {
@@ -467,7 +472,7 @@ footer .phone .mail {
 }
 .productDesc .productText {
   font: 13px Tahoma;
-  margin-bottom: 56px;
+  margin-bottom: 36px;
 }
 .productDesc .productFeatures ul {
   -webkit-margin-before: 0;
@@ -637,4 +642,19 @@ input
 {
 	margin-bottom: 10px !important;
 	
+}
+h1, h4
+{
+	font-size: inherit !important;
+	line-height: inherit !important;
+	margin: 0 !important;
+}
+header .row
+{
+	width: 100%;
+	margin: 0;
+}
+.ask
+{
+	padding-right: 0px !important;
 }
